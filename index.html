@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/assets/css/base.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" />
+        <title></title>
+        <!-- Disable Dark Reader -->
+        <meta name="darkreader-lock" />
+        <!-- Disable Google Translate -->
+        <meta name="google" content="notranslate" />
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root">
+            <!-- Loading -->
+            <div class="loading">
+                <div class="loading__circle"></div>
+                <div class="loading__text text--bold">
+                    Loading<span class="dot dot--1">.</span><span class="dot dot--2">.</span
+                    ><span class="dot dot--3">.</span>
+                </div>
+            </div>
+            <!-- End Loading -->
+            <!-- App -->
+            <div class="container">
+                <canvas class="particles" id="particle-canvas"></canvas>
+                <div id="text-container">
+                    <p class="text text--bold text--3d" id="text-default" hidden></p>
+                </div>
+            </div>
+            <!-- End App -->
+        </div>
+        <script type="module" src="/assets/js/particle.js"></script>
+        <script type="module" src="/assets/js/index.js"></script>
+    </body>
+</html>
